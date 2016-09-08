@@ -73,7 +73,7 @@ public class elevator
     public void exit(int leavingPassengers)
     {
         /* */
-        if (occupants > 0) {
+        if (occupants < 0) {
             occupants = occupants - leavingPassengers;
         }
         else {
